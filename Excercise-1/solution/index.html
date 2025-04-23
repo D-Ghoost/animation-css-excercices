@@ -1,0 +1,29 @@
+<div class="square">Buenardo</div>
+<style>
+	.square{
+	  position: fixed;
+	  bottom: 0;
+	  width: 150px;
+	  height: 150px;
+	  text-align: center;
+	  background-color: aqua;
+	  border-radius: 10px;
+	  animation: jump 1.5s infinite ease-in-out;
+	  animation-direction: alternate; /* Si solo se ejecuta en una dirección */
+	  /* animation-iteration-count: 5; /* Va a tener 5 saltos */
+	  /* animation-timing-function: linear; /* Aqui definimos el tipo de animación */
+	}
+
+	@keyframes jump{
+	    0%{
+	      bottom: 0;
+	    }
+	    100%{
+	      bottom: 60px;
+	    }
+	    0%{
+	      bottom: 0;
+	    }
+	}
+	
+<style>
