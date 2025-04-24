@@ -1,0 +1,28 @@
+<!-- Este ejercicio es similar pero lo hace con una imagen, con opacity -->
+<div class="image-container">
+  <div class="hover-images"></div>
+</div>
+
+<style>
+  .image-container {
+    width: 480px;
+    height: 400px;
+    background: url('https://i.ytimg.com/vi/K1DWCijvbCU/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hover-images {
+    width: 100%;
+    height: 100%;
+    background: url('https://i.pinimg.com/736x/f7/65/a3/f765a3d8a7e931a25373c5abe7f75bdb.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 2s linear;
+  }
+
+  .image-container:hover .hover-images {
+    opacity: 1;
+  }
+</style>
