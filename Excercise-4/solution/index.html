@@ -1,0 +1,26 @@
+<div class="space">
+  <button class="btn">Click me</button>
+</div>
+<style>
+  .space{
+    width: 100%;
+  }
+
+  .btn{
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    /* name | duration | timing-function | delay | iteration | direction | fill | play-state */
+    animation: move-btn 2s ease-in-out forwards; 
+  }
+
+  @keyframes move-btn{
+    0%{
+      left: 10px;
+    }100%{
+      left: 300px;
+    }
+  }
+</style>
