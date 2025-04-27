@@ -1,0 +1,23 @@
+<button class="vibrante">Es Viiiibra</button>
+<style>
+  .vibrante{
+    position: relative;
+    width: 20dvw;
+    height: 10dvh;
+    font-weight: bold;
+  }
+
+  .vibrante:hover{
+    animation: vibrate 0.01s ease-in-out infinite alternate ;
+  }
+
+  @keyframes vibrate{
+    from{
+      top: 0;
+      left: 0;
+    }to{
+      left: 1px;
+      top: 1px;  
+    }
+  }
+</style>
